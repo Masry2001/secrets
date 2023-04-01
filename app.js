@@ -49,7 +49,6 @@ app.route("/register")
     newUser.save()
     .then(function(savedDoc) {
         res.render("secrets");
-        console.log(savedDoc);
     })
     .catch(function(err) {
         console.log(err);
